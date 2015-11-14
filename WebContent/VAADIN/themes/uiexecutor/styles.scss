@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "uiexecutor.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in uiexecutor.scss */
+.uiexecutor {
+  @include addons;
+  @include uiexecutor;
+}
