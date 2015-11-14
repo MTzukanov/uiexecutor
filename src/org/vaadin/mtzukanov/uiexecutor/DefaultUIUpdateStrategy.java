@@ -25,8 +25,16 @@ public class DefaultUIUpdateStrategy implements UIUpdateStrategy {
 		}
 	}
 
-	private Map<UI, UIData> uiData = new HashMap<>();
-	private int workPollInterval = DEFAULT_WORK_POLL_INTERVAL;
+	private final Map<UI, UIData> uiData = new HashMap<>();
+	private final int workPollInterval;
+	
+	public DefaultUIUpdateStrategy() {
+		this(DEFAULT_WORK_POLL_INTERVAL);
+	}
+
+	public DefaultUIUpdateStrategy(int workPollInterval) {
+		this.workPollInterval = workPollInterval;
+	}
 
 	/**
 	 * Called when a task is submitted for execution to adjust the polling

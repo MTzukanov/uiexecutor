@@ -1,4 +1,4 @@
-package com.example.uiexecutor;
+package org.vaadin.mtzukanov.uiexecutor.test;
 
 import com.vaadin.testbench.ScreenshotOnFailureRule;
 import com.vaadin.testbench.TestBenchTestCase;
